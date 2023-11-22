@@ -44,6 +44,7 @@
 
       <nav class="navbar container" data-navbar>
         <ul class="navbar-list">
+          <button id="toggleDarkMode">Toggle Dark Mode</button>
 
           <li>
             <a style="color: white" href="#home" class="navbar-link" data-nav-link>Home</a>
@@ -957,6 +958,14 @@ but brands are created in the mind.
     document.getElementById('view-count').innerText = pageViews;
 </script>
 
+<script>
+  const toggleButton = document.getElementById('toggleDarkMode');
+  const body = document.body;
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+  });
+</script>
 
 
 
